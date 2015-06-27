@@ -8,7 +8,7 @@
  */
 /* global $, chrome */
 
-var emojiVersion = '1.0.0';
+var emojiVersion = '1.0.1';
 
 var emojiContainer = $('#emojiPanel');
 
@@ -228,8 +228,12 @@ if (emojiContainer.length) {
             var placeholder = content.match(/\{\{%(\d+\|\d+)?%\}\}/g);
             placeholder && placeholder.map(function (item) {
                 item
-                    .match(/\{\{%(.*?)%\}\}/)
+                    .match(/\{\{%(.*)?%\}\}/)
                     .map(function (v) {
+                        // 过滤第一条match结果
+                        if (v.indexOf('%') > -1) {
+                            return false;
+                        }
                         (function (index) {
                             loadConfig({
                                 mode     : 'data',
