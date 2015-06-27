@@ -1,0 +1,36 @@
+{
+  "content_scripts": [
+    {
+      "include_globs": [
+        "http://x.sankuai.com*",
+        "https://x.sankuai.com*"
+      ],
+      "js": [
+        "jquery-2.1.4.min.js",
+        "emoji.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "description": "大象的表情是不是该丰富下？",
+  "icons": {
+    "128": "icon/128.png",
+    "16": "icon/16.png",
+    "32": "icon/32.png",
+    "48": "icon/48.png"
+  },
+  "name": "大象表情包。",
+  "page_action": {
+    "default_icon": "icon/48.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    "emoji/*"
+  ],
+  "version": "1.0.0",
+  "manifest_version": 2
+}

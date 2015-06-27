@@ -1,0 +1,14 @@
+.idea/
+*.iml
+coverage/
+node_modules/
+test/temp
+
+.DS_Store
+*.db
+*.bak
+*.tmp
+*.cmd
+~*
+
+resource
