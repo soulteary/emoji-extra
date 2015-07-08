@@ -2,13 +2,13 @@
  * gif
  *
  * @desc
- * @date        15/7/2
+ * @date        15/7/8
  * @author      soulteary <soulteary@qq.com> (http://soulteary.com)
  * @package
  */
 /* global $ */
 
-var gifVersion = '1.0.0';
+var gifVersion = '1.0.3';
 
 var sClass = {
     HIDE         : 'fn-hide',

@@ -2,13 +2,13 @@
  * emoji
  *
  * @desc
- * @date        15/6/27
+ * @date        15/7/8
  * @author      soulteary <soulteary@qq.com> (http://soulteary.com)
  * @package
  */
 /* global $, chrome */
 
-var emojiVersion = '1.0.1';
+var emojiVersion = '1.0.3';
 
 var emojiContainer = $('#emojiPanel');
 
