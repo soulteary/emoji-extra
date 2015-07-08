@@ -11,6 +11,7 @@
 var gifVersion = '1.0.0';
 
 var sClass = {
+    HIDE         : 'fn-hide',
     CHAT_HISTORY : '#chat_chatmsglist',
     GIF_SUPPORT:'.js-gif-support'
 };
